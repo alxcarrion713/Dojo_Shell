@@ -1,0 +1,33 @@
+Dojo.objects.create(name="Dallas Dojo", city="Dallas", state="Tx")
+
+Dojo.objects.create(name="Bellevue Dojo", city="Bellevue", state="WA")
+
+Dojo.objects.create(name="Virginia Dojo", city="Richmond", state="VA")
+
+Dojo.objects.all().delete()
+
+Dojo.objects.create(name="Houston Dojo", city="Houston", state="Tx")
+
+Dojo.objects.create(name="Tyler Dojo", city="Tyler", state="Tx")
+
+Dojo.objects.create(name="713 Dojo", city="htown", state="Tx")
+
+Ninjas.objects.create(school = Dojo.objects.get(id=4), first_name= "Alex",last_name="Carrion")
+
+Ninjas.objects.create(school = Dojo.objects.get(id=4), first_name= "kyllia",last_name="byrd")
+
+Ninjas.objects.create(school = Dojo.objects.get(id=4), first_name= "hannah",last_name="Carrion")
+
+Ninjas.objects.create(school = Dojo.objects.get(id=5), first_name= "lebron",last_name="james")
+
+Ninjas.objects.create(school = Dojo.objects.get(id=5), first_name= "kobe",last_name="bryant")
+
+Ninjas.objects.create(school = Dojo.objects.get(id=5), first_name= "steve",last_name="francis")
+
+Ninjas.objects.create(school = Dojo.objects.get(id=6), first_name= "kenny",last_name="smith")
+
+Ninjas.objects.create(school = Dojo.objects.get(id=6), first_name= "yao",last_name="ming")
+
+Ninjas.objects.create(school = Dojo.objects.get(id=6), first_name= "hakeem",last_name="olajuwan")
+
+Ninjas.objects.get(id=4).school
